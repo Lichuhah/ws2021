@@ -1,0 +1,23 @@
+﻿<Window x:Class="DekstopProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DekstopProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="287" Margin="10,10,0,0" VerticalAlignment="Top" Width="423"/>
+        <Button x:Name="btnGet" Content="GET" HorizontalAlignment="Left" Margin="10,302,0,0" VerticalAlignment="Top" Width="423" Click="btnGet_Click"/>
+        <TextBox x:Name="txtGet" HorizontalAlignment="Left" Height="23" Margin="438,10,0,0" TextWrapping="Wrap" Text="id" VerticalAlignment="Top" Width="331"/>
+        <Button x:Name="btnGetWithId" Content="GET/{id}" HorizontalAlignment="Left" Margin="438,38,0,0" VerticalAlignment="Top" Width="331" Click="btnGetWithId_Click"/>
+        <TextBox x:Name="txtPost" HorizontalAlignment="Left" Height="23" Margin="438,93,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="331"/>
+        <Button x:Name="btnPost" Content="POST{[FromBody Thing]}" HorizontalAlignment="Left" Margin="438,121,0,0" VerticalAlignment="Top" Width="331" Click="btnPost_Click"/>
+        <TextBox x:Name="txtNamePut" HorizontalAlignment="Left" Height="23" Margin="438,192,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="331"/>
+        <Button x:Name="btnPut" Content="PUT{int id, [FromBody] Thing}" HorizontalAlignment="Left" Margin="438,220,0,0" VerticalAlignment="Top" Width="331" Click="btnPut_Click"/>
+        <TextBox x:Name="txtIdPut" HorizontalAlignment="Left" Height="23" Margin="438,164,0,0" TextWrapping="Wrap" Text="id" VerticalAlignment="Top" Width="331"/>
+        <TextBox x:Name="txtIdDelete" HorizontalAlignment="Left" Height="23" Margin="438,274,0,0" TextWrapping="Wrap" Text="id" VerticalAlignment="Top" Width="331"/>
+        <Button x:Name="btnDelete" Content="DELETE{int id}" HorizontalAlignment="Left" Margin="438,302,0,0" VerticalAlignment="Top" Width="331" Click="btnDelete_Click"/>
+
+    </Grid>
+</Window>
